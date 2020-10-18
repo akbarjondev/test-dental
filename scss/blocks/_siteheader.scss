@@ -13,6 +13,13 @@
 	top: -60px;
 	left: 50%;
 	transform: translateX(-50%);
+
+	&:hover {
+		opacity: 0.8;
+	}
+	&:active {
+		opacity: 0.6;
+	}
 }
 .call {
 	display: flex;
@@ -101,6 +108,10 @@
 	font-weight: 400;
 	color: #ffffff;
 	text-decoration: none;
+
+	&:hover {
+		color: #ffd600;
+	}
 }
 .socials {
 	flex-shrink: 0;
@@ -115,6 +126,14 @@
 .socials__item:nth-child(2) {
 	margin-left: 13px;
 	margin-right: 13px;
+}
+.socials__link {
+	&:hover {
+		opacity: 0.8;
+	}
+	&:active {
+		opacity: 0.6;
+	}
 }
 .socials__img {
 	display: block;

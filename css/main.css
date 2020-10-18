@@ -438,6 +438,12 @@ img {
   left: 50%;
   transform: translateX(-50%);
 }
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
+}
 
 .call {
   display: flex;
@@ -540,6 +546,9 @@ img {
   color: #ffffff;
   text-decoration: none;
 }
+.nav__link:hover {
+  color: #ffd600;
+}
 
 .socials {
   flex-shrink: 0;
@@ -558,6 +567,13 @@ img {
 .socials__item:nth-child(2) {
   margin-left: 13px;
   margin-right: 13px;
+}
+
+.socials__link:hover {
+  opacity: 0.8;
+}
+.socials__link:active {
+  opacity: 0.6;
 }
 
 .socials__img {
