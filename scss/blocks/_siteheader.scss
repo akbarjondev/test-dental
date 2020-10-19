@@ -1,8 +1,12 @@
 .siteheader {
-	position: relative;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
 	padding-top: 12px;
 	padding-bottom: 66px;
 	background-color: #ffffff;
+	z-index: 1;
 }
 .siteheader__top {
 	@include flex-center;
@@ -212,7 +216,7 @@
 	}
 	.socials {
 		position: absolute;
-		bottom: -648%;
+		bottom: -647%;
 		display: none;
 		justify-content: center;
 		width: 100%;
@@ -231,5 +235,11 @@
 @include retina() {
 	.call::before {
 		background-image: url("../img/phone@2x.png");
+	}
+	.working::before {
+		background-image: url("../img/clock@2x.png");
+	}
+	.siteheader__menu {
+		background-image: url("../img/hamburger@2x.png");
 	}
 }

@@ -79,6 +79,38 @@
 		</div><!-- End of container -->
 	</div><!-- End of siteheader -->
 
+	<section class="slider">
+		<ul class="slider__list">
+			<li class="slider__item slide">
+				<picture>
+					<!-- 375ekran uchun -->
+					<source media="(max-width:375px)" srcset="img/slide-girl-375.png 1x, img/slide-girl-375@2x.png 2x">
+
+					<!-- 1024ekran uchun -->
+					<source media="(max-width:1024px)" srcset="img/slide-girl-1024.png 1x, img/slide-girl-1024@2x.png 2x">
+
+					<!-- 1440ekran uchun -->
+					<source media="(max-width:1440px)" srcset="img/slide-girl-1440.png 1x, img/slide-girl-1440@2x.png 2x">
+
+					<img class="slide__img" src="img/slide-girl-1920.png" srcset="img/slide-girl-1920.png 1x, img/slide-girl-1920@2x.png 2x" alt="Slide girl" width="1920" height="900">
+				</picture>
+
+				<div class="container slide__container">
+					<h3 class="slide__heading">get a brilliant smile for every day</h3>
+					<div class="slide__text">Modern technology and expert-class dentists</div>
+					<a href="#" class="slide__link">GET</a>
+				</div><!-- End of container -->
+			</li>
+		</ul><!-- End of slider__list -->
+
+		<div class="container slider__container">
+			<div class="slider__controls controls">
+				<button class="controls__button controls__prev" type="button"></button>
+				<button class="controls__button controls__next" type="button"></button>
+			</div>
+		</div>
+	</section><!-- End of slider -->
+
   <script src="js/main.js"></script>
 </body>
 </html>

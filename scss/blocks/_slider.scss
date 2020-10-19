@@ -1,0 +1,124 @@
+.slider {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.slider__container {
+	position: relative;
+	left: 0;
+	width: 100%;
+}
+.controls {
+	position: absolute;
+	bottom: 150px;
+}
+.controls__button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+	&:active {
+		opacity: 0.6;
+	}
+}
+.controls__prev {
+	display: inline-block;
+	width: 42px;
+	height: 70px;
+	background-image: url("../img/btn-prev.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+}
+.controls__next {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-image: url("../img/btn-next.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+}
+.slider__list {
+	@include list0;
+}
+.slide {
+	position: relative;
+	color: #272727;
+}
+.slide__container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.slide__heading {
+	max-width: 545px;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 48px;
+	line-height: 56px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.slide__text {
+	order: -1;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 400;
+}
+.slide__link {
+	padding: 24px 115px;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #0055b8;
+	border-radius: 5px;
+	text-decoration: none;
+
+	&:hover {
+		opacity: 0.8;
+	}
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+//responsive
+@include breakpoint-down(375px) {
+	.slide__container {
+		display: none;
+	}
+	.controls {
+		bottom: 27px;
+	}
+	.controls__prev {
+		width: 26px;
+		height: 44px;
+	}
+	.controls__next {
+		width: 44px;
+		height: 44px;
+	}
+}
+
+//retina
+@include retina() {
+	.controls__prev {
+		background-image: url("../img/btn-prev@2x.png");
+	}
+	.controls__next {
+		background-image: url("../img/btn-next@2x.png");
+	}
+}
